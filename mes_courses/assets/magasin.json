@@ -1,0 +1,2935 @@
+{
+  "rayons": [
+    {
+      "nom": "Maison",
+      "objets": [
+        0,
+        1,
+        14,
+        26,
+        65,
+        80,
+        81,
+        82,
+        90,
+        105,
+        107,
+        113,
+        223,
+        227,
+        237,
+        250,
+        254,
+        255,
+        256
+      ]
+    },
+    {
+      "nom": "Fruits et l\u00e9gumes",
+      "objets": [
+        2,
+        4,
+        6,
+        7,
+        8,
+        10,
+        17,
+        21,
+        22,
+        25,
+        30,
+        32,
+        37,
+        38,
+        42,
+        43,
+        50,
+        57,
+        58,
+        59,
+        62,
+        63,
+        74,
+        75,
+        77,
+        78,
+        94,
+        98,
+        104,
+        106,
+        112,
+        119,
+        120,
+        127,
+        128,
+        131,
+        138,
+        142,
+        144,
+        148,
+        149,
+        151,
+        156,
+        165,
+        172,
+        180,
+        181,
+        183,
+        184,
+        185,
+        203,
+        209,
+        212,
+        214,
+        220,
+        225,
+        234,
+        236,
+        244,
+        246,
+        265,
+        266
+      ]
+    },
+    {
+      "nom": "Epicerie",
+      "objets": [
+        3,
+        5,
+        9,
+        11,
+        12,
+        13,
+        16,
+        18,
+        19,
+        33,
+        34,
+        35,
+        47,
+        48,
+        54,
+        60,
+        61,
+        71,
+        85,
+        89,
+        92,
+        95,
+        96,
+        97,
+        102,
+        108,
+        116,
+        117,
+        123,
+        125,
+        126,
+        129,
+        130,
+        134,
+        135,
+        137,
+        141,
+        143,
+        147,
+        150,
+        154,
+        155,
+        160,
+        166,
+        167,
+        168,
+        169,
+        170,
+        173,
+        174,
+        175,
+        177,
+        178,
+        179,
+        182,
+        187,
+        188,
+        189,
+        190,
+        191,
+        195,
+        202,
+        207,
+        213,
+        215,
+        216,
+        221,
+        226,
+        229,
+        231,
+        232,
+        233,
+        240,
+        242,
+        243,
+        245,
+        247,
+        264,
+        267
+      ]
+    },
+    {
+      "nom": "Boulangerie",
+      "objets": [
+        15,
+        36,
+        39,
+        88
+      ]
+    },
+    {
+      "nom": "Bricolage",
+      "objets": [
+        20,
+        79,
+        91,
+        124,
+        186,
+        193,
+        222
+      ]
+    },
+    {
+      "nom": "Boissons",
+      "objets": [
+        23,
+        41,
+        44,
+        45,
+        46,
+        55,
+        56,
+        73,
+        84,
+        87,
+        145,
+        158,
+        171,
+        194,
+        208,
+        210,
+        219,
+        249,
+        251,
+        257,
+        258
+      ]
+    },
+    {
+      "nom": "Pharmacie",
+      "objets": [
+        24,
+        146,
+        218,
+        230,
+        248,
+        263
+      ]
+    },
+    {
+      "nom": "Cr\u00e9merie",
+      "objets": [
+        27,
+        40,
+        49,
+        64,
+        72,
+        93,
+        109,
+        114,
+        115,
+        132,
+        152,
+        153,
+        157,
+        159,
+        176,
+        196,
+        201,
+        204
+      ]
+    },
+    {
+      "nom": "Jardinage",
+      "objets": [
+        28,
+        29,
+        52,
+        76,
+        86,
+        197
+      ]
+    },
+    {
+      "nom": "Higi\u00e8ne",
+      "objets": [
+        31,
+        51,
+        53,
+        83,
+        99,
+        100,
+        103,
+        133,
+        136,
+        161,
+        163,
+        164,
+        198,
+        199,
+        200,
+        224,
+        228,
+        238,
+        239,
+        252,
+        253,
+        259,
+        260,
+        261,
+        262
+      ]
+    },
+    {
+      "nom": "Animalerie",
+      "objets": [
+        66,
+        111,
+        121,
+        122
+      ]
+    },
+    {
+      "nom": "Viandes et poissons",
+      "objets": [
+        67,
+        68,
+        69,
+        70,
+        101,
+        110,
+        118,
+        139,
+        140,
+        162,
+        192,
+        205,
+        206,
+        211,
+        217,
+        235,
+        241
+      ]
+    }
+  ],
+  "objets": [
+    {
+      "nom": "Sacs poubelle",
+      "image": "abfallsaecke.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "nettoyage",
+        "dechet",
+        "poubelle",
+        "sac"
+      ]
+    },
+    {
+      "nom": "Liquide vaisselle",
+      "image": "abwaschmittel.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "nettoyage",
+        "liquide",
+        "vaisselle"
+      ]
+    },
+    {
+      "nom": "Pommes",
+      "image": "aepfel.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "fruit",
+        "pomme",
+        "dessert",
+        "compote"
+      ]
+    },
+    {
+      "nom": "Papier aluminium",
+      "image": "alufolie.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "embalage",
+        "conservation",
+        "papier",
+        "aluminium"
+      ]
+    },
+    {
+      "nom": "Ananas",
+      "image": "ananas.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "fruit",
+        "ananas",
+        "dessert"
+      ]
+    },
+    {
+      "nom": "Compote de pomme",
+      "image": "apfelmus.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "fruit",
+        "pomme",
+        "dessert",
+        "compote"
+      ]
+    },
+    {
+      "nom": "Abricots",
+      "image": "aprikosen.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "fruit",
+        "abricot",
+        "dessert"
+      ]
+    },
+    {
+      "nom": "Artichauts",
+      "image": "artischocken.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "legume"
+      ]
+    },
+    {
+      "nom": "Aubergine",
+      "image": "aubergine.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "legume"
+      ]
+    },
+    {
+      "nom": "Saucisson",
+      "image": "aufschnitt.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "viande",
+        "ap\u00e9ritif",
+        "porc",
+        "tranche"
+      ]
+    },
+    {
+      "nom": "Avocat",
+      "image": "avocado.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "legume",
+        "aperitif"
+      ]
+    },
+    {
+      "nom": "Pot pour b\u00e9b\u00e9",
+      "image": "babynahrung.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "nourisson",
+        "bebe",
+        "pot"
+      ]
+    },
+    {
+      "nom": "Papier cuisson",
+      "image": "backpapier.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "cuisson",
+        "papier",
+        "four"
+      ]
+    },
+    {
+      "nom": "Pr\u00e9paration g\u00e2teau",
+      "image": "backpulver.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "gateau",
+        "preparation"
+      ]
+    },
+    {
+      "nom": "Produit \u00e0 vitre",
+      "image": "badreiniger.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "nettoyage",
+        "vitre",
+        "produit"
+      ]
+    },
+    {
+      "nom": "Baguette de pain",
+      "image": "baguette.png",
+      "rayon": "Boulangerie",
+      "motsclefs": [
+        "pain",
+        "baguette",
+        "dejeuner",
+        "sandwitch",
+        "boulangerie"
+      ]
+    },
+    {
+      "nom": "Vinaigre balsamique",
+      "image": "balsamico.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "vinaigre",
+        "balsamique",
+        "vinaigrette",
+        "assaisonnement"
+      ]
+    },
+    {
+      "nom": "Bananes",
+      "image": "bananen.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "banane",
+        "fruit",
+        "dessert"
+      ]
+    },
+    {
+      "nom": "Basilic",
+      "image": "basilikum.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "basilic",
+        "herbe",
+        "epice"
+      ]
+    },
+    {
+      "nom": "Riz basmati",
+      "image": "basmatireis.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "riz",
+        "basmati",
+        "feculent",
+        "cereales"
+      ]
+    },
+    {
+      "nom": "Piles",
+      "image": "batterien.png",
+      "rayon": "Bricolage",
+      "motsclefs": [
+        "pile",
+        "batterie"
+      ]
+    },
+    {
+      "nom": "Noix",
+      "image": "baumnuesse.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "noix",
+        "fruit",
+        "coque"
+      ]
+    },
+    {
+      "nom": "Baies",
+      "image": "himbeeren.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "fruit",
+        "baie"
+      ]
+    },
+    {
+      "nom": "Bi\u00e8re",
+      "image": "bier.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "biere",
+        "alcool",
+        "bouteille",
+        "boisson"
+      ]
+    },
+    {
+      "nom": "Pansements",
+      "image": "binden.png",
+      "rayon": "Pharmacie",
+      "motsclefs": [
+        "pansement",
+        "soin",
+        "plaie",
+        "sang"
+      ]
+    },
+    {
+      "nom": "Poires",
+      "image": "birnen.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "poire",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Film \u00e9tirable",
+      "image": "blaetterteig.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "film",
+        "plastique",
+        "emballage",
+        "etirable"
+      ]
+    },
+    {
+      "nom": "Bleu d'auvergne",
+      "image": "blauschimmelkaese.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "fromage",
+        "bleu",
+        "auvergne",
+        "laitier"
+      ]
+    },
+    {
+      "nom": "Fleurs",
+      "image": "blumen.png",
+      "rayon": "Jardinage",
+      "motsclefs": [
+        "fleur",
+        "plante",
+        "graine"
+      ]
+    },
+    {
+      "nom": "Terreau",
+      "image": "blumenerde.png",
+      "rayon": "Jardinage",
+      "motsclefs": [
+        "plante",
+        "terre",
+        "terreau"
+      ]
+    },
+    {
+      "nom": "Choufleur",
+      "image": "blumenkohl.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "legume",
+        "choufleur",
+        "chou"
+      ]
+    },
+    {
+      "nom": "Lait pour le corps",
+      "image": "bodylotion.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "lait",
+        "douche",
+        "savon",
+        "soin",
+        "bain"
+      ]
+    },
+    {
+      "nom": "Haricots",
+      "image": "bohnen.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "legume",
+        "feculent",
+        "haricot"
+      ]
+    },
+    {
+      "nom": "Bouillon",
+      "image": "bouillon.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "bouillon",
+        "preparation",
+        "soupe"
+      ]
+    },
+    {
+      "nom": "Viandox",
+      "image": "bratensauce.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "bouillon",
+        "sauce",
+        "viande"
+      ]
+    },
+    {
+      "nom": "Saucisses",
+      "image": "bratwurst.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "saucisse",
+        "viande",
+        "porc"
+      ]
+    },
+    {
+      "nom": "Petits pains",
+      "image": "broetchen.png",
+      "rayon": "Boulangerie",
+      "motsclefs": [
+        "pain",
+        "dejeuner"
+      ]
+    },
+    {
+      "nom": "Brocolis",
+      "image": "brokkoli.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "brocolis",
+        "legume"
+      ]
+    },
+    {
+      "nom": "M\u00fbres",
+      "image": "brombeeren.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "fruit",
+        "mure"
+      ]
+    },
+    {
+      "nom": "Pain",
+      "image": "brot.png",
+      "rayon": "Boulangerie",
+      "motsclefs": [
+        "pain",
+        "dejeuner"
+      ]
+    },
+    {
+      "nom": "Beurre",
+      "image": "butter.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "beurre",
+        "laitier",
+        "tartine"
+      ]
+    },
+    {
+      "nom": "Champagne",
+      "image": "champagner.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "champagne",
+        "alcool",
+        "bouteille",
+        "bulle"
+      ]
+    },
+    {
+      "nom": "Champignons",
+      "image": "champignons.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "champignon"
+      ]
+    },
+    {
+      "nom": "Tomates cerises",
+      "image": "cherrytomaten.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "tomate",
+        "cerise",
+        "legume",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Cidre",
+      "image": "cidre.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "cidre",
+        "alcool",
+        "bouteille",
+        "bulle"
+      ]
+    },
+    {
+      "nom": "Coca cola",
+      "image": "cola.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "coca",
+        "cola",
+        "soda",
+        "bulle",
+        "pepsi"
+      ]
+    },
+    {
+      "nom": "Coca cola light",
+      "image": "cola_light.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "coca",
+        "cola",
+        "soda",
+        "bulle",
+        "pepsi",
+        "light"
+      ]
+    },
+    {
+      "nom": "Corn flakes",
+      "image": "corn_flakes.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "corn",
+        "flakes",
+        "cereale",
+        "dejeuner"
+      ]
+    },
+    {
+      "nom": "Couscous",
+      "image": "couscous.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "couscous",
+        "oriental",
+        "plat"
+      ]
+    },
+    {
+      "nom": "Cr\u00e8me fraiche",
+      "image": "creme_fraiche.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "creme",
+        "fraiche",
+        "laitier"
+      ]
+    },
+    {
+      "nom": "Dattes",
+      "image": "datteln.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "datte",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "D\u00e9odorant",
+      "image": "deo.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "deo",
+        "deodorant",
+        "soin"
+      ]
+    },
+    {
+      "nom": "Engrais",
+      "image": "duenger.png",
+      "rayon": "Jardinage",
+      "motsclefs": [
+        "engrais",
+        "plante",
+        "terre"
+      ]
+    },
+    {
+      "nom": "Gel douche",
+      "image": "duschmittel.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "gel",
+        "douche",
+        "bain",
+        "soin"
+      ]
+    },
+    {
+      "nom": "Oeufs",
+      "image": "eier.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "oeuf"
+      ]
+    },
+    {
+      "nom": "Th\u00e9 glac\u00e9",
+      "image": "eistee.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "the",
+        "glace",
+        "boisson",
+        "frais"
+      ]
+    },
+    {
+      "nom": "Redbull",
+      "image": "energy_drink.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "redbull",
+        "energie",
+        "monster"
+      ]
+    },
+    {
+      "nom": "Petits pois",
+      "image": "erbsen.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "petit",
+        "pois",
+        "legume"
+      ]
+    },
+    {
+      "nom": "Fraises",
+      "image": "erdbeeren.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "fraise",
+        "fruit",
+        "dessert"
+      ]
+    },
+    {
+      "nom": "Cacahu\u00e8tes",
+      "image": "erdnuesse.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "cacahuete",
+        "apero",
+        "fruit",
+        "sec"
+      ]
+    },
+    {
+      "nom": "Vinaigre",
+      "image": "essig.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "vinaigre",
+        "vinaigrette",
+        "assaisonnement"
+      ]
+    },
+    {
+      "nom": "Cornichons",
+      "image": "essiggurken.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "cornichon",
+        "condiment",
+        "assaisonnement"
+      ]
+    },
+    {
+      "nom": "Figues",
+      "image": "feigen.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "figue",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Fenouil",
+      "image": "fenchel.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "fenouil",
+        "herbe",
+        "condiment"
+      ]
+    },
+    {
+      "nom": "Feta",
+      "image": "feta.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "feta",
+        "fromage"
+      ]
+    },
+    {
+      "nom": "Lingettes",
+      "image": "feuchttuecher.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "lingette",
+        "nettoyage",
+        "surface",
+        "jetable"
+      ]
+    },
+    {
+      "nom": "Nourriture pour poisson",
+      "image": "fischfutter.png",
+      "rayon": "Animalerie",
+      "motsclefs": [
+        "nourriture",
+        "poisson",
+        "animal",
+        "compagnie"
+      ]
+    },
+    {
+      "nom": "Poisson",
+      "image": "fisch.png",
+      "rayon": "Viandes et poissons",
+      "motsclefs": [
+        "poisson"
+      ]
+    },
+    {
+      "nom": "Poisson pan\u00e9",
+      "image": "fischstaebli.png",
+      "rayon": "Viandes et poissons",
+      "motsclefs": [
+        "poisson",
+        "batonnet"
+      ]
+    },
+    {
+      "nom": "Bifteck",
+      "image": "fleisch.png",
+      "rayon": "Viandes et poissons",
+      "motsclefs": [
+        "bifteck",
+        "boeuf",
+        "viande"
+      ]
+    },
+    {
+      "nom": "Saucisses",
+      "image": "frankfurter.png",
+      "rayon": "Viandes et poissons",
+      "motsclefs": [
+        "saucisse",
+        "porc",
+        "knacki",
+        "viande"
+      ]
+    },
+    {
+      "nom": "Film alimentaire",
+      "image": "frischhaltefolie.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "film",
+        "etirable",
+        "alimentaire",
+        "plastique"
+      ]
+    },
+    {
+      "nom": "Fromage frais",
+      "image": "frischkaese.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "fromage",
+        "frais",
+        "tartine"
+      ]
+    },
+    {
+      "nom": "Jus de fruit",
+      "image": "fruchtsaft.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "jus",
+        "fruit",
+        "d\u00e9jeuner"
+      ]
+    },
+    {
+      "nom": "Fruits",
+      "image": "fruechte.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Oignons",
+      "image": "fruehlingszwiebeln.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "oignon",
+        "accompagnement",
+        "condiment"
+      ]
+    },
+    {
+      "nom": "Outils de jardin",
+      "image": "gartenwerkzeug.png",
+      "rayon": "Jardinage",
+      "motsclefs": [
+        "outil"
+      ]
+    },
+    {
+      "nom": "L\u00e9gumes surgel\u00e9s",
+      "image": "gemuese_gefroren.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "l\u00e9gume",
+        "surgel\u00e9"
+      ]
+    },
+    {
+      "nom": "L\u00e9gumes",
+      "image": "gemuese.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "l\u00e9gume"
+      ]
+    },
+    {
+      "nom": "Papier cadeau",
+      "image": "geschenkpapier.png",
+      "rayon": "Bricolage",
+      "motsclefs": [
+        "papier",
+        "cadeau",
+        "embalage"
+      ]
+    },
+    {
+      "nom": "Liquide vaisselle",
+      "image": "geschirrglanz.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "liquide",
+        "vaisselle",
+        "nettoyage",
+        "evier"
+      ]
+    },
+    {
+      "nom": "Sel de lavage",
+      "image": "geschirrsalz.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "liquide",
+        "vaisselle",
+        "nettoyage",
+        "sel"
+      ]
+    },
+    {
+      "nom": "Tablettes lave-vaisselle",
+      "image": "geschirrtabs.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "liquide",
+        "vaisselle",
+        "nettoyage",
+        "tablette"
+      ]
+    },
+    {
+      "nom": "Cr\u00e8me de jour",
+      "image": "gesichtscreme.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "creme",
+        "visage"
+      ]
+    },
+    {
+      "nom": "Soda",
+      "image": "getraenke.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "soda"
+      ]
+    },
+    {
+      "nom": "Barres de c\u00e9r\u00e9ales",
+      "image": "getreideriegel.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "barre",
+        "c\u00e9r\u00e9ale",
+        "gouter",
+        "pause"
+      ]
+    },
+    {
+      "nom": "Arrosoir",
+      "image": "giesskanne.png",
+      "rayon": "Jardinage",
+      "motsclefs": [
+        "outil",
+        "arrosoir"
+      ]
+    },
+    {
+      "nom": "Gin",
+      "image": "gin.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "gin",
+        "alcool"
+      ]
+    },
+    {
+      "nom": "Croissants",
+      "image": "gipfeli.png",
+      "rayon": "Boulangerie",
+      "motsclefs": [
+        "croissant",
+        "d\u00e9jeuner"
+      ]
+    },
+    {
+      "nom": "Glace",
+      "image": "glace.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "glace",
+        "dessert",
+        "c\u00f4ne"
+      ]
+    },
+    {
+      "nom": "Produit \u00e0 vitre",
+      "image": "glasreiniger.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "produit",
+        "vitre",
+        "nettoyage"
+      ]
+    },
+    {
+      "nom": "Ampoule",
+      "image": "gluehbirne.png",
+      "rayon": "Bricolage",
+      "motsclefs": [
+        "ampoule",
+        "led",
+        "lumi\u00e8re"
+      ]
+    },
+    {
+      "nom": "Gnocchi",
+      "image": "gnocchi.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "gnocchi"
+      ]
+    },
+    {
+      "nom": "Gorgonzola",
+      "image": "gorgonzola.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "gorgonzola",
+        "fromage"
+      ]
+    },
+    {
+      "nom": "Pamplemousse",
+      "image": "grapefruit.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "pamplemousse",
+        "agrume",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Semoule",
+      "image": "griess.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "semoule",
+        "couscous"
+      ]
+    },
+    {
+      "nom": "Gressins",
+      "image": "grissini.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "gressin"
+      ]
+    },
+    {
+      "nom": "Cookies",
+      "image": "guetzli.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "dessert",
+        "cookie",
+        "gateau"
+      ]
+    },
+    {
+      "nom": "Concombre",
+      "image": "gurke.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "concombre",
+        "salade",
+        "l\u00e9gume"
+      ]
+    },
+    {
+      "nom": "Gel coiffant",
+      "image": "haargel.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "gel",
+        "coiffant",
+        "coiffure"
+      ]
+    },
+    {
+      "nom": "Laque",
+      "image": "haarspray.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "laque",
+        "spray",
+        "coiffant",
+        "coiffure"
+      ]
+    },
+    {
+      "nom": "Viande hach\u00e9e",
+      "image": "hackfleisch.png",
+      "rayon": "Viandes et poissons",
+      "motsclefs": [
+        "viande",
+        "hach\u00e9e",
+        "boeuf"
+      ]
+    },
+    {
+      "nom": "Flocons d'avoine",
+      "image": "haferflocken.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "flocons",
+        "avoine",
+        "d\u00e9jeuner"
+      ]
+    },
+    {
+      "nom": "Cr\u00e8me pour les mains",
+      "image": "handcreme.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "cr\u00e8me",
+        "main"
+      ]
+    },
+    {
+      "nom": "Noisettes",
+      "image": "haselnuesse.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "noisette",
+        "\u00e9cureuil",
+        "tic",
+        "tac"
+      ]
+    },
+    {
+      "nom": "Essui tout",
+      "image": "haushaltspapier.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "essui",
+        "sopalin",
+        "papier"
+      ]
+    },
+    {
+      "nom": "Framboises",
+      "image": "himbeeren.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "framboise",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Charbon de bois",
+      "image": "holzkohle.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "charbon",
+        "chauffage",
+        "cuisson"
+      ]
+    },
+    {
+      "nom": "Miel",
+      "image": "honig.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "miel",
+        "abeille",
+        "tartine",
+        "gorge",
+        "tisane"
+      ]
+    },
+    {
+      "nom": "Fromage blanc",
+      "image": "huettenkaese.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "fromage",
+        "blanc",
+        "dessert"
+      ]
+    },
+    {
+      "nom": "Homards",
+      "image": "hummer.png",
+      "rayon": "Viandes et poissons",
+      "motsclefs": [
+        "homard",
+        "crustac\u00e9",
+        "luxe"
+      ]
+    },
+    {
+      "nom": "P\u00e2t\u00e9e pour chien",
+      "image": "hundefutter.png",
+      "rayon": "Animalerie",
+      "motsclefs": [
+        "p\u00e2t\u00e9e",
+        "chien",
+        "animal",
+        "compagnie",
+        "croquette"
+      ]
+    },
+    {
+      "nom": "Gingembre",
+      "image": "ingwer.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "gingembre",
+        "\u00e9pice"
+      ]
+    },
+    {
+      "nom": "Insecticide",
+      "image": "insektenschutzmittel.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "insecticide",
+        "insecte"
+      ]
+    },
+    {
+      "nom": "Yaourt",
+      "image": "joghurt.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "yaourt",
+        "yahourt",
+        "dessert"
+      ]
+    },
+    {
+      "nom": "Fromage",
+      "image": "kaese.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "fromage"
+      ]
+    },
+    {
+      "nom": "Caf\u00e9",
+      "image": "kaffee.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "cafe",
+        "grain",
+        "poudre"
+      ]
+    },
+    {
+      "nom": "Cacao",
+      "image": "kakao.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "cacao",
+        "grain",
+        "poudre"
+      ]
+    },
+    {
+      "nom": "Veau",
+      "image": "kalbfleisch.png",
+      "rayon": "Viandes et poissons",
+      "motsclefs": [
+        "veau",
+        "viande",
+        "b\u00e9b\u00e9",
+        "vache"
+      ]
+    },
+    {
+      "nom": "Carottes",
+      "image": "karotten.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "carotte",
+        "l\u00e9gume"
+      ]
+    },
+    {
+      "nom": "Pommes de terre",
+      "image": "kartoffeln.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "pomme",
+        "terre",
+        "patate"
+      ]
+    },
+    {
+      "nom": "Nourriture pour chat",
+      "image": "katzenfutter.png",
+      "rayon": "Animalerie",
+      "motsclefs": [
+        "chat",
+        "croquette",
+        "pat\u00e9e",
+        "animal",
+        "compagnie"
+      ]
+    },
+    {
+      "nom": "Liti\u00e8re pour chat",
+      "image": "katzenstreu.png",
+      "rayon": "Animalerie",
+      "motsclefs": [
+        "chat",
+        "liti\u00e8re",
+        "animal",
+        "compagnie"
+      ]
+    },
+    {
+      "nom": "Chewing-gum",
+      "image": "kaugummi.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "Chewing",
+        "gum"
+      ]
+    },
+    {
+      "nom": "Bougies",
+      "image": "kerzen.png",
+      "rayon": "Bricolage",
+      "motsclefs": [
+        "bougie",
+        "\u00e9clairage",
+        "feu"
+      ]
+    },
+    {
+      "nom": "Ketchup",
+      "image": "ketchup.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "ketchup",
+        "sauce",
+        "tomate",
+        "\u00e9pice"
+      ]
+    },
+    {
+      "nom": "Pois chiches",
+      "image": "kichererbsen.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "pois",
+        "chiche"
+      ]
+    },
+    {
+      "nom": "Cerises",
+      "image": "kirschen.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "cerise",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Kiwi",
+      "image": "kiwi.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "kiwi",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Biscottes",
+      "image": "knaeckebrot.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "biscotte",
+        "d\u00e9jeuner"
+      ]
+    },
+    {
+      "nom": "Ail",
+      "image": "knoblauch.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "ail",
+        "\u00e9pice"
+      ]
+    },
+    {
+      "nom": "Chou",
+      "image": "kohl.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "chou",
+        "l\u00e9gume"
+      ]
+    },
+    {
+      "nom": "Lait de coco",
+      "image": "kokosmilch.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "lait",
+        "coco"
+      ]
+    },
+    {
+      "nom": "Pr\u00e9servatifs",
+      "image": "kondome.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "pr\u00e9servatif",
+        "protection"
+      ]
+    },
+    {
+      "nom": "Confiture",
+      "image": "konfituere.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "confiture",
+        "tartine",
+        "d\u00e9jeuner"
+      ]
+    },
+    {
+      "nom": "Coriande",
+      "image": "koriander.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "coriande",
+        "\u00e9pice"
+      ]
+    },
+    {
+      "nom": "Lingettes b\u00e9b\u00e9",
+      "image": "kosmetiktuecher.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "lingette",
+        "b\u00e9b\u00e9",
+        "jetable"
+      ]
+    },
+    {
+      "nom": "G\u00e2teau",
+      "image": "kuchen.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "gateau",
+        "dessert"
+      ]
+    },
+    {
+      "nom": "Citrouille",
+      "image": "kuerbis.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "citrouille",
+        "l\u00e9gume"
+      ]
+    },
+    {
+      "nom": "Saumon",
+      "image": "lachs.png",
+      "rayon": "Viandes et poissons",
+      "motsclefs": [
+        "saumon",
+        "poisson"
+      ]
+    },
+    {
+      "nom": "Agneau",
+      "image": "lamm.png",
+      "rayon": "Viandes et poissons",
+      "motsclefs": [
+        "agneau",
+        "mouton",
+        "viande",
+        "cotelette"
+      ]
+    },
+    {
+      "nom": "Lasagne",
+      "image": "lasagne.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "lasagne",
+        "plat"
+      ]
+    },
+    {
+      "nom": "Poireau",
+      "image": "lauch.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "poireau",
+        "l\u00e9gume"
+      ]
+    },
+    {
+      "nom": "Pain d'\u00e9pice",
+      "image": "lebkuchen.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "pain",
+        "\u00e9pice",
+        "dessert"
+      ]
+    },
+    {
+      "nom": "Citron vert",
+      "image": "limette.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "citron",
+        "vert",
+        "agrume",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Limonade",
+      "image": "limonade.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "limonade",
+        "citron",
+        "soda"
+      ]
+    },
+    {
+      "nom": "Lentilles de contact",
+      "image": "linsenmittel.png",
+      "rayon": "Pharmacie",
+      "motsclefs": [
+        "lentille",
+        "vue",
+        "contact"
+      ]
+    },
+    {
+      "nom": "Lentilles",
+      "image": "linsen.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "lentille",
+        "f\u00e9culent"
+      ]
+    },
+    {
+      "nom": "Mais",
+      "image": "mais.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "mais",
+        "salade",
+        "l\u00e9gume"
+      ]
+    },
+    {
+      "nom": "Mandarines",
+      "image": "mandarinen.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "mandarine",
+        "agrume",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Amandes",
+      "image": "mandeln.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "amande",
+        "fruit",
+        "sec"
+      ]
+    },
+    {
+      "nom": "Mangue",
+      "image": "mango.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "mangue",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Margarine",
+      "image": "margarine.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "margarine",
+        "tartine",
+        "d\u00e9jeuner",
+        "cuisson"
+      ]
+    },
+    {
+      "nom": "Mascarpone",
+      "image": "mascarpone.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "mascarpone",
+        "fromage",
+        "tiramitsu"
+      ]
+    },
+    {
+      "nom": "Mayonnaise",
+      "image": "mayonnaise.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "mayonnaise",
+        "sauce"
+      ]
+    },
+    {
+      "nom": "Farine",
+      "image": "mehl.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "farine",
+        "poudre",
+        "bl\u00e9"
+      ]
+    },
+    {
+      "nom": "Melon",
+      "image": "melone.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "melon",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Lait",
+      "image": "milch.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "lait",
+        "vache"
+      ]
+    },
+    {
+      "nom": "Eau gazeuse",
+      "image": "mineralwasser.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "eau",
+        "gazeuse",
+        "co2"
+      ]
+    },
+    {
+      "nom": "Mozzarella",
+      "image": "mozzarella.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "fromage",
+        "tomate"
+      ]
+    },
+    {
+      "nom": "Mueesli",
+      "image": "mueesli.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "mueesli",
+        "c\u00e9r\u00e9ales",
+        "d\u00e9jeuner"
+      ]
+    },
+    {
+      "nom": "Bain de bouche",
+      "image": "mundspuelung.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "bain",
+        "bouche",
+        "dent",
+        "haleine"
+      ]
+    },
+    {
+      "nom": "Moules",
+      "image": "muscheln.png",
+      "rayon": "Viandes et poissons",
+      "motsclefs": [
+        "moule",
+        "coquillage",
+        "mollusque"
+      ]
+    },
+    {
+      "nom": "Dissolvant vernis",
+      "image": "nagellackentferner.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "Dissolvant",
+        "vernis",
+        "ongle"
+      ]
+    },
+    {
+      "nom": "Vernis \u00e0 ongle",
+      "image": "nagellack.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "vernis",
+        "ongle"
+      ]
+    },
+    {
+      "nom": "Nectarine",
+      "image": "nektarine.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "nectarine",
+        "peche",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Cr\u00e8me de nougat",
+      "image": "nougatcreme.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "cr\u00e8me",
+        "nougat",
+        "tartine"
+      ]
+    },
+    {
+      "nom": "Nouilles",
+      "image": "nudeln.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "pate",
+        "nouille"
+      ]
+    },
+    {
+      "nom": "Huile",
+      "image": "oel.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "huile",
+        "vinaigrette"
+      ]
+    },
+    {
+      "nom": "Huile d'olive",
+      "image": "olivenoel.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "huile",
+        "olive",
+        "vinaigrette"
+      ]
+    },
+    {
+      "nom": "Olives",
+      "image": "oliven.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "olive"
+      ]
+    },
+    {
+      "nom": "Jus d'orange",
+      "image": "orangensaft.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "jus",
+        "orange",
+        "fruit",
+        "d\u00e9jeuner"
+      ]
+    },
+    {
+      "nom": "Orange",
+      "image": "orange.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "orange",
+        "agrume",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Origan",
+      "image": "oregano.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "origan",
+        "\u00e9pice"
+      ]
+    },
+    {
+      "nom": "Chapelure",
+      "image": "paniermehl.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "chapelure",
+        "cuisson"
+      ]
+    },
+    {
+      "nom": "Paprika",
+      "image": "paprikapulver.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "paprika",
+        "\u00e9pice"
+      ]
+    },
+    {
+      "nom": "Parmesan",
+      "image": "parmesan.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "parmesan",
+        "rap\u00e9"
+      ]
+    },
+    {
+      "nom": "P\u00e2tes",
+      "image": "pasta.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "p\u00e2te",
+        "spaghetti",
+        "nouille",
+        "coquillette"
+      ]
+    },
+    {
+      "nom": "Pennes",
+      "image": "penne.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "p\u00e2te",
+        "penne"
+      ]
+    },
+    {
+      "nom": "Piments",
+      "image": "peperoncini.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "piment",
+        "\u00e9pice"
+      ]
+    },
+    {
+      "nom": "Poivrons",
+      "image": "peperoni.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "poivron",
+        "l\u00e9gume"
+      ]
+    },
+    {
+      "nom": "Persil",
+      "image": "petersilie.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "persil",
+        "herbe"
+      ]
+    },
+    {
+      "nom": "Poivre",
+      "image": "pfeffer.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "poivre",
+        "\u00e9pice"
+      ]
+    },
+    {
+      "nom": "P\u00eaches",
+      "image": "pfirsich.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "peche",
+        "nectarine",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Prunes",
+      "image": "pflaumen.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "prune",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Champignons",
+      "image": "pilze.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "champignon"
+      ]
+    },
+    {
+      "nom": "Pinceau",
+      "image": "pinsel.png",
+      "rayon": "Bricolage",
+      "motsclefs": [
+        "pinceau",
+        "peinture"
+      ]
+    },
+    {
+      "nom": "Pizza",
+      "image": "pizza.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "pizza"
+      ]
+    },
+    {
+      "nom": "P\u00e2te \u00e0 pizza",
+      "image": "pizzateig.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "pizza",
+        "cuisson"
+      ]
+    },
+    {
+      "nom": "Chips",
+      "image": "pommes_chips.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "chips",
+        "pomme",
+        "terre"
+      ]
+    },
+    {
+      "nom": "Frites",
+      "image": "pommes_frites.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "frite",
+        "pomme",
+        "terre"
+      ]
+    },
+    {
+      "nom": "Pop corn",
+      "image": "pop_corn.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "pop",
+        "corn",
+        "mais"
+      ]
+    },
+    {
+      "nom": "Poulet",
+      "image": "poulet.png",
+      "rayon": "Viandes et poissons",
+      "motsclefs": [
+        "poulet",
+        "canard",
+        "viande",
+        "dinde"
+      ]
+    },
+    {
+      "nom": "Propane",
+      "image": "propangas.png",
+      "rayon": "Bricolage",
+      "motsclefs": [
+        "propane",
+        "gaz",
+        "chauffage"
+      ]
+    },
+    {
+      "nom": "Prosecco",
+      "image": "prosecco.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "prosecco",
+        "vin",
+        "alcool"
+      ]
+    },
+    {
+      "nom": "Sucre en poudre",
+      "image": "puderzucker.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "sucre",
+        "poudre"
+      ]
+    },
+    {
+      "nom": "Cr\u00e8me fraiche",
+      "image": "rahm.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "creme",
+        "fraiche"
+      ]
+    },
+    {
+      "nom": "Tondeuse \u00e0 gazon",
+      "image": "rasenmaeher.png",
+      "rayon": "Jardinage",
+      "motsclefs": [
+        "Tondeuse",
+        "pelouse",
+        "gazon"
+      ]
+    },
+    {
+      "nom": "Rasoir",
+      "image": "rasierer.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "rasoir",
+        "rasage"
+      ]
+    },
+    {
+      "nom": "Lames de rasoir",
+      "image": "rasierklingen.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "rasoir",
+        "lame",
+        "rasage"
+      ]
+    },
+    {
+      "nom": "Mousse \u00e0 raser",
+      "image": "rasierschaum.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "mousse",
+        "rasoir",
+        "rasage"
+      ]
+    },
+    {
+      "nom": "Fromage r\u00e2p\u00e9",
+      "image": "reibkaese.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "fromage",
+        "rap\u00e9"
+      ]
+    },
+    {
+      "nom": "Riz",
+      "image": "reis.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "riz"
+      ]
+    },
+    {
+      "nom": "Rhubarbe",
+      "image": "rhabarber.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "rhubarbe"
+      ]
+    },
+    {
+      "nom": "Ricotta",
+      "image": "ricotta.png",
+      "rayon": "Cr\u00e9merie",
+      "motsclefs": [
+        "ricotta",
+        "fromage"
+      ]
+    },
+    {
+      "nom": "C\u00f4te de boeuf",
+      "image": "rindfleisch.png",
+      "rayon": "Viandes et poissons",
+      "motsclefs": [
+        "cote",
+        "boeuf",
+        "viande"
+      ]
+    },
+    {
+      "nom": "Jambon cru",
+      "image": "rohschinken.png",
+      "rayon": "Viandes et poissons",
+      "motsclefs": [
+        "jambon",
+        "tranche",
+        "porc",
+        "cru",
+        "viande"
+      ]
+    },
+    {
+      "nom": "Romarin",
+      "image": "rosmarin.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "romarin",
+        "\u00e9pice",
+        "herbe"
+      ]
+    },
+    {
+      "nom": "Vin rouge",
+      "image": "rotwein.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "vin",
+        "rouge",
+        "alcool"
+      ]
+    },
+    {
+      "nom": "Roquette",
+      "image": "rucola.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "roquette",
+        "salade"
+      ]
+    },
+    {
+      "nom": "Rhum",
+      "image": "rum.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "rhum",
+        "alcool"
+      ]
+    },
+    {
+      "nom": "Salami",
+      "image": "salami.png",
+      "rayon": "Viandes et poissons",
+      "motsclefs": [
+        "salami",
+        "saucisson",
+        "porc",
+        "viande"
+      ]
+    },
+    {
+      "nom": "Salade",
+      "image": "salat.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "salade"
+      ]
+    },
+    {
+      "nom": "Sauce salade",
+      "image": "salatsauce.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "sauce",
+        "salade",
+        "vinaigrette"
+      ]
+    },
+    {
+      "nom": "Sauge",
+      "image": "salbei.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "sauge"
+      ]
+    },
+    {
+      "nom": "Sel",
+      "image": "salz.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "sel",
+        "\u00e9pice"
+      ]
+    },
+    {
+      "nom": "Sardines",
+      "image": "sardellen.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "sardine",
+        "boite"
+      ]
+    },
+    {
+      "nom": "Jambon",
+      "image": "schinken.png",
+      "rayon": "Viandes et poissons",
+      "motsclefs": [
+        "jambon",
+        "porc",
+        "viande"
+      ]
+    },
+    {
+      "nom": "Antalgique",
+      "image": "schmerzmittel.png",
+      "rayon": "Pharmacie",
+      "motsclefs": [
+        "antalgique",
+        "douleur",
+        "parac\u00e9tamol",
+        "ibuprophene"
+      ]
+    },
+    {
+      "nom": "Schnaps",
+      "image": "schnaps.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "schnaps",
+        "alcool"
+      ]
+    },
+    {
+      "nom": "Ciboulette",
+      "image": "schnittlauch.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "ciboulette",
+        "herbe"
+      ]
+    },
+    {
+      "nom": "Chocolat",
+      "image": "schokolade.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "chocolat",
+        "tablette",
+        "cacao"
+      ]
+    },
+    {
+      "nom": "Vis",
+      "image": "schrauben.png",
+      "rayon": "Bricolage",
+      "motsclefs": [
+        "vis",
+        "visser",
+        "fixer",
+        "clou"
+      ]
+    },
+    {
+      "nom": "Eponges",
+      "image": "schwamm.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "eponge",
+        "jettable",
+        "nettoyage"
+      ]
+    },
+    {
+      "nom": "Savon",
+      "image": "seife.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "savon"
+      ]
+    },
+    {
+      "nom": "C\u00e9leri",
+      "image": "sellerie.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "celeri",
+        "l\u00e9gume"
+      ]
+    },
+    {
+      "nom": "Moutarde",
+      "image": "senf.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "moutarde",
+        "sauce",
+        "\u00e9pice"
+      ]
+    },
+    {
+      "nom": "Serviettes",
+      "image": "servietten.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "serviette",
+        "papier",
+        "jetable"
+      ]
+    },
+    {
+      "nom": "Shampoing",
+      "image": "shampoo.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "shampoing",
+        "cheveux"
+      ]
+    },
+    {
+      "nom": "G\u00e2teaux ap\u00e9ritif",
+      "image": "snacks.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "gateau",
+        "aperitif",
+        "apero"
+      ]
+    },
+    {
+      "nom": "Cr\u00e8me solaire",
+      "image": "sonnencreme.png",
+      "rayon": "Pharmacie",
+      "motsclefs": [
+        "creme",
+        "solaire"
+      ]
+    },
+    {
+      "nom": "Lait de soja",
+      "image": "soya_milch.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "lait",
+        "soja"
+      ]
+    },
+    {
+      "nom": "Sauce soja",
+      "image": "soyasauce.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "sauce",
+        "soja"
+      ]
+    },
+    {
+      "nom": "Spaghetti",
+      "image": "spaghetti.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "spaghetti",
+        "pate"
+      ]
+    },
+    {
+      "nom": "Asperges",
+      "image": "spargel.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "asperges",
+        "l\u00e9gume"
+      ]
+    },
+    {
+      "nom": "Speck",
+      "image": "speck.png",
+      "rayon": "Viandes et poissons",
+      "motsclefs": [
+        "speck",
+        "jambon",
+        "porc",
+        "tranche",
+        "viande"
+      ]
+    },
+    {
+      "nom": "Epinards",
+      "image": "spinat.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "epinard",
+        "l\u00e9gume"
+      ]
+    },
+    {
+      "nom": "Lessive",
+      "image": "spuelmittel.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "lessive",
+        "linge"
+      ]
+    },
+    {
+      "nom": "Tampons",
+      "image": "tampons.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "tampon",
+        "serviette",
+        "higi\u00e8nique",
+        "p\u00e9riodique",
+        "protection"
+      ]
+    },
+    {
+      "nom": "Mouchoirs",
+      "image": "taschentuecher.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "mouchoir",
+        "papier",
+        "jetable"
+      ]
+    },
+    {
+      "nom": "Th\u00e9",
+      "image": "tee.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "th\u00e9",
+        "boisson"
+      ]
+    },
+    {
+      "nom": "Thon",
+      "image": "thon.png",
+      "rayon": "Viandes et poissons",
+      "motsclefs": [
+        "thon",
+        "poisson"
+      ]
+    },
+    {
+      "nom": "Thym",
+      "image": "thymian.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "thym",
+        "\u00e9pice"
+      ]
+    },
+    {
+      "nom": "Tofu",
+      "image": "tofu.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "tofu"
+      ]
+    },
+    {
+      "nom": "Tomates",
+      "image": "tomaten.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "tomate",
+        "salade",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Sauce tomate",
+      "image": "tomatensauce.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "tomate",
+        "sauce"
+      ]
+    },
+    {
+      "nom": "Raisins",
+      "image": "trauben.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "raisin",
+        "grappe",
+        "fruit"
+      ]
+    },
+    {
+      "nom": "Sucre vanill\u00e9",
+      "image": "vanillezucker.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "sucre",
+        "vanille",
+        "poudre"
+      ]
+    },
+    {
+      "nom": "Vitamines",
+      "image": "vitamine.png",
+      "rayon": "Pharmacie",
+      "motsclefs": [
+        "vitamine",
+        "cachet"
+      ]
+    },
+    {
+      "nom": "Vodka",
+      "image": "vodka.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "vodka",
+        "alcool"
+      ]
+    },
+    {
+      "nom": "D\u00e9tergent",
+      "image": "waschmittel.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "detergent",
+        "nettoyage",
+        "sol"
+      ]
+    },
+    {
+      "nom": "Eau",
+      "image": "wasser.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "eau"
+      ]
+    },
+    {
+      "nom": "Cotons",
+      "image": "watterondellen.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "coton"
+      ]
+    },
+    {
+      "nom": "Cotons tiges",
+      "image": "wattestaebchen.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "coton",
+        "tige"
+      ]
+    },
+    {
+      "nom": "Papier toilettes",
+      "image": "wc_papier.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "papier",
+        "wc",
+        "toilette",
+        "pq"
+      ]
+    },
+    {
+      "nom": "Produit toilettes",
+      "image": "wc_reiniger.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "produit",
+        "toilette",
+        "wc",
+        "nettoyage"
+      ]
+    },
+    {
+      "nom": "Adoucissant",
+      "image": "weichspueler.png",
+      "rayon": "Maison",
+      "motsclefs": [
+        "adoucissant",
+        "lessive",
+        "linge"
+      ]
+    },
+    {
+      "nom": "Vin blanc",
+      "image": "weisswein.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "vin",
+        "blanc",
+        "alcool"
+      ]
+    },
+    {
+      "nom": "Whisky",
+      "image": "whisky.png",
+      "rayon": "Boissons",
+      "motsclefs": [
+        "whisky",
+        "alcool"
+      ]
+    },
+    {
+      "nom": "Couches",
+      "image": "windeln.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "couche",
+        "b\u00e9b\u00e9"
+      ]
+    },
+    {
+      "nom": "Brosse \u00e0 dent",
+      "image": "zahnbuersten.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "brosse",
+        "dent"
+      ]
+    },
+    {
+      "nom": "Dentifrice",
+      "image": "zahnpasta.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "dentifrice",
+        "dent"
+      ]
+    },
+    {
+      "nom": "Fil dentaire",
+      "image": "zahnseide.png",
+      "rayon": "Higi\u00e8ne",
+      "motsclefs": [
+        "fil",
+        "dentaire",
+        "dent"
+      ]
+    },
+    {
+      "nom": "Cigarettes",
+      "image": "zigaretten.png",
+      "rayon": "Pharmacie",
+      "motsclefs": [
+        "cigarette",
+        "tabac"
+      ]
+    },
+    {
+      "nom": "Canelle",
+      "image": "zimt.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "canelle",
+        "\u00e9pice"
+      ]
+    },
+    {
+      "nom": "Citron",
+      "image": "zitrone.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "citron",
+        "agrume"
+      ]
+    },
+    {
+      "nom": "Courgette",
+      "image": "zucchetti.png",
+      "rayon": "Fruits et l\u00e9gumes",
+      "motsclefs": [
+        "courgette",
+        "salade"
+      ]
+    },
+    {
+      "nom": "Sucre",
+      "image": "zucker.png",
+      "rayon": "Epicerie",
+      "motsclefs": [
+        "sucre",
+        "morceau"
+      ]
+    }
+  ]
+}
