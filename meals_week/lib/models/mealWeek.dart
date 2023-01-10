@@ -13,5 +13,4 @@ class MealWeek {
   Map<String, dynamic> toJson() => {
     weekDay:meals,
   };
-
 }

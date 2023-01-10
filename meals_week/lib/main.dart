@@ -5,6 +5,7 @@ import 'dart:io';
 
 import 'screens/mealsweek_screen.dart';
 import 'models/mealWeek.dart';
+import 'models/FileManager.dart';
 
 
 const String FILENAME = 'myJsonFile.json';
@@ -21,50 +22,15 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  bool _fileExits = false;
-  late File _filePath;
 
-  List<MealWeek> meals = [];
-
-  Map<String, dynamic> _jsonIntoMap = {};
-  late String _jsonString;
-
-  Future<String> get _localPath async {
-    final directory = await getApplicationDocumentsDirectory();
-    return directory.path;
-  }
-
-  Future<File> get _localFile async {
-    final path = await _localPath;
-    return File('$path/$FILENAME');
-  }
-
-  void _readJson() async {
-
-    _filePath = await _localFile;
-    _fileExits = await _filePath.exists();
-
-    if (_fileExits) {
-      _jsonString = await _filePath.readAsString();
-
-      _jsonIntoMap = jsonDecode(_jsonString);
-    }
-  }
-
-  void _writeJson(MealWeek p_day) async {
-
-    _jsonIntoMap.addAll(p_day.toJson());
-
-    _jsonString = jsonEncode(_jsonIntoMap);
-
-    _filePath.writeAsString(_jsonString);
-  }
+  final storage = FileManager(fileName: 'mealWeekJson.json');
 
   @override
   void initState() {
     super.initState();
 
-    //_readJson();
+    storage.readJson();
+
     //_writeJson( MealWeek('Lundi', {'Midi': 'Couscous', 'Soir': 'Lasagne'}) );
   }
 
@@ -76,20 +42,7 @@ class _MyAppState extends State<MyApp> {
           bodyText2: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
         )
       ),
-      home: const MealsWeekScreen(),
+      home: MealsWeekScreen(storage:storage),
     );
   }
 }
-
-/*
-{
-  "Lundi": {
-    "Midi" : "Cordon bleu",
-    "Soir" : "Legumes",
-  },
-  "Mardi": {
-    "Midi" : "Salade",
-    "Soir" : "Couscous",
-  }
-}
-*/

@@ -3,13 +3,16 @@ import 'package:meals_week/widgets/meal_item.dart';
 import '../models/mealWeek.dart';
 
 class MealsWeekScreen extends StatefulWidget {
-  const MealsWeekScreen({Key? key}) : super(key: key);
+  final storage;
+
+  MealsWeekScreen({Key? key, this.storage}) : super(key: key);
 
   @override
   State<MealsWeekScreen> createState() => _MealsWeekScreenState();
 }
 
 class _MealsWeekScreenState extends State<MealsWeekScreen> {
+
   List<MealWeek> mealWeek = [
     MealWeek('Lundi', {'Midi': 'Couscous', 'Soir': 'Lasagne'}),
     MealWeek('Mardi', {'Midi': 'Couscous', 'Soir': 'Lasagne'}),
@@ -25,6 +28,12 @@ class _MealsWeekScreenState extends State<MealsWeekScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Repas de la semaine.'),
+      ),
+      floatingActionButton: ElevatedButton(
+        onPressed: () {
+          widget.storage.writeJson(MealWeek('Mardi', {'Midi': 'Couscous', 'Soir': 'Lasagne'}));
+        },
+        child:Text('1'),
       ),
       body: Container(
         margin: const EdgeInsets.all(10),
