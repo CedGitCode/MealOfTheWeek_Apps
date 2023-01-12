@@ -3,42 +3,25 @@ import 'package:meals_week/widgets/meal_item.dart';
 import '../models/mealWeek.dart';
 
 class MealsWeekScreen extends StatefulWidget {
-  final storage;
+  List<MealWeek> weeklyMeal;
 
-  MealsWeekScreen({Key? key, this.storage}) : super(key: key);
+  MealsWeekScreen({Key? key, required this.weeklyMeal}) : super(key: key);
 
   @override
   State<MealsWeekScreen> createState() => _MealsWeekScreenState();
 }
 
 class _MealsWeekScreenState extends State<MealsWeekScreen> {
-
-  List<MealWeek> mealWeek = [
-    MealWeek('Lundi', {'Midi': 'Couscous', 'Soir': 'Lasagne'}),
-    MealWeek('Mardi', {'Midi': 'Couscous', 'Soir': 'Lasagne'}),
-    MealWeek('Mercredi', {'Midi': 'Couscous', 'Soir': 'Lasagne'}),
-    MealWeek('Jeudi', {'Midi': 'Couscous', 'Soir': 'Lasagne'}),
-    MealWeek('Vendredi', {'Midi': 'Couscous', 'Soir': 'Lasagne'}),
-    MealWeek('Samedi', {'Midi': 'Couscous', 'Soir': 'Lasagne'}),
-    MealWeek('Dimanche', {'Midi': 'Couscous', 'Soir': 'Lasagne'}),
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Repas de la semaine.'),
       ),
-      floatingActionButton: ElevatedButton(
-        onPressed: () {
-          widget.storage.writeJson(MealWeek('Mardi', {'Midi': 'Couscous', 'Soir': 'Lasagne'}));
-        },
-        child:Text('1'),
-      ),
       body: Container(
         margin: const EdgeInsets.all(10),
         child: ListView.builder(
-          itemCount: mealWeek.length,
+          itemCount: widget.weeklyMeal.length,
           itemBuilder: (BuildContext ctx, int index) {
             return Container(
               child: Column(
@@ -50,7 +33,7 @@ class _MealsWeekScreenState extends State<MealsWeekScreen> {
                       color: Colors.orange,
                     ),
                     child: Text(
-                      mealWeek[index].weekDay,
+                      widget.weeklyMeal[index].weekDay,
                       style: const TextStyle(
                           fontWeight: FontWeight.bold, fontSize: 20),
                       textAlign: TextAlign.center,
@@ -61,9 +44,17 @@ class _MealsWeekScreenState extends State<MealsWeekScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                     MealItem(title:mealWeek[index].meals['Midi'] as String),
+                      MealItem(
+                        weeklyMeal: widget.weeklyMeal,
+                        actualDay: index,
+                        whichPeriodOfDay: 'Midi',
+                      ),
                       const SizedBox(width: 15),
-                      MealItem(title:mealWeek[index].meals['Soir'] as String),
+                      MealItem(
+                        weeklyMeal: widget.weeklyMeal,
+                        actualDay: index,
+                        whichPeriodOfDay: 'Soir',
+                      ),
                     ],
                   ),
                   const SizedBox(height: 15),

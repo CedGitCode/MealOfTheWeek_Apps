@@ -1,9 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:meals_week/models/FileManager.dart';
+import '../models/mealWeek.dart';
 
 class MealItem extends StatefulWidget {
-  String title;
 
-  MealItem({this.title = 'Aucun'});
+  // List of weeklyMeal
+  List<MealWeek> weeklyMeal;
+
+  // index of weeklyMeal
+  final int actualDay;
+
+  // Lunch or Diner
+  final String whichPeriodOfDay;
+
+  MealItem({required this.weeklyMeal, required this.actualDay, required this.whichPeriodOfDay});
 
   @override
   State<MealItem> createState() => _MealItemState();
@@ -13,10 +23,16 @@ class _MealItemState extends State<MealItem> {
 
   late TextEditingController _controller;
 
-  void changeMeal(String p_title)
+  void changeMeal(String p_newRecipe)
   {
     setState(() {
-      widget.title = p_title;
+      widget.weeklyMeal[widget.actualDay].meals[widget.whichPeriodOfDay] = p_newRecipe;
+
+      final FileManager _fileManager = FileManager(fileName: 'mealWeekJson.json');
+
+      _fileManager.writeJson(widget.weeklyMeal);
+
+     // widget.title = p_title;
     });
   }
 
@@ -34,6 +50,7 @@ class _MealItemState extends State<MealItem> {
 
   @override
   Widget build(BuildContext context) {
+
     return Expanded(
       child: InkWell(
         child: Container(
@@ -51,7 +68,7 @@ class _MealItemState extends State<MealItem> {
               tileMode: TileMode.mirror,
             ),
           ),
-          child: Text(widget.title),
+          child: Text(widget.weeklyMeal[widget.actualDay].meals[widget.whichPeriodOfDay]),
         ),
         onTap: () {
           showDialog(context: context, builder: (ctx) {

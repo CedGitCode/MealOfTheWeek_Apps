@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:path_provider/path_provider.dart';
 import 'dart:convert';
-import 'dart:io';
 
 import 'screens/mealsweek_screen.dart';
 import 'models/mealWeek.dart';
 import 'models/FileManager.dart';
-
 
 const String FILENAME = 'myJsonFile.json';
 
@@ -23,26 +20,39 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
 
-  final storage = FileManager(fileName: 'mealWeekJson.json');
+  // Will take the meal of json File.
+  List<MealWeek> _dataOfWeeklyMeal = [];
 
   @override
   void initState() {
     super.initState();
 
-    storage.readJson();
+    // Me permet de lire/écrire dans le fichier
+    final FileManager _fileManager = FileManager(fileName: 'mealWeekJson.json');
 
-    //_writeJson( MealWeek('Lundi', {'Midi': 'Couscous', 'Soir': 'Lasagne'}) );
+    _fileManager.readJson().then( (value) {
+
+      Map<String, dynamic> transformJsonIntoMap = jsonDecode(value);
+      print(transformJsonIntoMap);
+
+      transformJsonIntoMap.forEach((key, value) {
+        _dataOfWeeklyMeal.add( MealWeek(key, value) );
+      });
+
+      setState(() {});
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        textTheme: const TextTheme(
-          bodyText2: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
-        )
+          textTheme: const TextTheme(
+            bodyText2: TextStyle(
+                fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
+          )
       ),
-      home: MealsWeekScreen(storage:storage),
+      home: _dataOfWeeklyMeal.isEmpty ? const Scaffold(body: Center(child:Text('Coucou'),),) : MealsWeekScreen(weeklyMeal: _dataOfWeeklyMeal),
     );
   }
 }

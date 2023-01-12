@@ -2,7 +2,7 @@
 class MealWeek {
 
   String weekDay;
-  Map<String, String> meals;
+  Map<String, dynamic> meals;
 
   MealWeek(this.weekDay, this.meals);
 

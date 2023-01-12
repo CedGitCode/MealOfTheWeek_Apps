@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
@@ -7,7 +8,6 @@ import 'dart:io';
 import './mealWeek.dart';
 
 class FileManager {
-
   // Constructeur.
   final String fileName;
 
@@ -23,42 +23,47 @@ class FileManager {
     return File('$path/$fileName');
   }
 
+  Future<String> _initializeFile() async {
+    final file = await _localFile;
+
+    final String _initalizeData = "{\"Lundi\": {\"Midi\": \"Aucun\", \"Soir\":\"Aucun\"},"
+        "\"Mardi\": {\"Midi\": \"Aucun\", \"Soir\":\"Aucun\"},"
+        "\"Mercredi\": {\"Midi\": \"Aucun\", \"Soir\":\"Aucun\"},"
+        "\"Jeudi\": {\"Midi\": \"Aucun\", \"Soir\":\"Aucun\"},"
+        "\"Vendredi\": {\"Midi\": \"Aucun\", \"Soir\":\"Aucun\"},"
+        "\"Samedi\": {\"Midi\": \"Aucun\", \"Soir\":\"Aucun\"},"
+        "\"Dimanche\": {\"Midi\": \"Aucun\", \"Soir\":\"Aucun\"} }";
+
+    file.writeAsString(_initalizeData);
+
+    return _initalizeData;
+  }
+
   Future<String> readJson() async {
+    final file = await _localFile;
 
     try {
-      print('I\'m reading');
-
-      final file = await _localFile;
-
       final contents = await file.readAsString();
-
       return contents;
     }
     catch(e){
-      return "{}";
+      final String contents = await _initializeFile();
+      return contents;
     }
 
   }
 
-  Future<void> writeJson(MealWeek p_day) async {
+  Future<void> writeJson(List<MealWeek> p_weeklyMeal) async {
     final file = await _localFile;
 
-    Map<String, dynamic> jsonIntoMap;
+    Map<String, dynamic> jsonIntoMap = {};
 
-    final String contents = await readJson();
-
-    print('Im here: $contents');
-    jsonIntoMap = jsonDecode(contents);
-
-    print(p_day.toJson());
-
-    jsonIntoMap.addAll(p_day.toJson());
-
-    print(jsonIntoMap);
+    p_weeklyMeal.forEach((element) {
+      jsonIntoMap.addAll(element.toJson());
+    });
 
     final String jsonResult = jsonEncode(jsonIntoMap);
 
     file.writeAsString(jsonResult);
   }
-
 }
