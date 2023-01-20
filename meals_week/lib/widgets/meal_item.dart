@@ -13,46 +13,54 @@ class MealItem extends StatefulWidget {
   // Lunch or Diner
   final String whichPeriodOfDay;
 
-  MealItem({required this.weeklyMeal, required this.actualDay, required this.whichPeriodOfDay});
+  MealItem(
+      {required this.weeklyMeal,
+      required this.actualDay,
+      required this.whichPeriodOfDay});
 
   @override
   State<MealItem> createState() => _MealItemState();
 }
 
 class _MealItemState extends State<MealItem> {
-
   late TextEditingController _controller;
+  final FileManager _fileManager = FileManager(fileName: 'mealWeekJson.json');
 
-  void changeMeal(String p_newRecipe)
-  {
+  void changeMeal(String p_newRecipe) {
     setState(() {
-      widget.weeklyMeal[widget.actualDay].meals[widget.whichPeriodOfDay] = p_newRecipe;
-
-      final FileManager _fileManager = FileManager(fileName: 'mealWeekJson.json');
-
+      widget.weeklyMeal[widget.actualDay].meals[widget.whichPeriodOfDay] =
+          p_newRecipe;
       _fileManager.writeJson(widget.weeklyMeal);
-
-     // widget.title = p_title;
     });
   }
 
   @override
-  void initState(){
+  void initState() {
     super.initState();
     _controller = TextEditingController();
   }
+
   @override
-  void dispose()
-  {
+  void dispose() {
     _controller.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-
     return Expanded(
-      child: InkWell(
+      child: GestureDetector(
+        onLongPress: () {
+
+          String nameMealClicked = widget.weeklyMeal[widget.actualDay].meals[widget.whichPeriodOfDay];
+
+          if (nameMealClicked.startsWith('?', 0) && nameMealClicked.length == 1) return;
+
+          setState(() {
+            widget.weeklyMeal[widget.actualDay].setDefaultMeal(widget.whichPeriodOfDay);
+            _fileManager.writeJson(widget.weeklyMeal);
+          });
+        },
         child: Container(
           alignment: Alignment.center,
           height: 150,
@@ -68,26 +76,29 @@ class _MealItemState extends State<MealItem> {
               tileMode: TileMode.mirror,
             ),
           ),
-          child: Text(widget.weeklyMeal[widget.actualDay].meals[widget.whichPeriodOfDay]),
+          child: Text(widget
+              .weeklyMeal[widget.actualDay].meals[widget.whichPeriodOfDay]),
         ),
         onTap: () {
-          showDialog(context: context, builder: (ctx) {
-            return AlertDialog(
-              title: const Text('Test'),
-              content: TextField(
-                controller: _controller,
-              ),
-              actions: <Widget>[
-                TextButton(
-                  child: const Text('Confirmer.'),
-                  onPressed: () {
-                    changeMeal(_controller.text);
-                    Navigator.of(ctx).pop();
-                  },
-                )
-              ],
-            );
-          });
+          showDialog(
+              context: context,
+              builder: (ctx) {
+                return AlertDialog(
+                  title: const Text('Test'),
+                  content: TextField(
+                    controller: _controller,
+                  ),
+                  actions: <Widget>[
+                    TextButton(
+                      child: const Text('Confirmer.'),
+                      onPressed: () {
+                        changeMeal(_controller.text);
+                        Navigator.of(ctx).pop();
+                      },
+                    )
+                  ],
+                );
+              });
         },
       ),
     );

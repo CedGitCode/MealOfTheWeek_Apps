@@ -13,4 +13,9 @@ class MealWeek {
   Map<String, dynamic> toJson() => {
     weekDay:meals,
   };
+
+  void setDefaultMeal(String p_whichPeriodOfDay) {
+      meals[p_whichPeriodOfDay] = "?";
+  }
+
 }
