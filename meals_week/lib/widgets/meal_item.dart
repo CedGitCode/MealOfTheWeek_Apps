@@ -76,15 +76,7 @@ class _MealItemState extends State<MealItem> {
           height: 150,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            gradient: const LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: <Color>[
-                Colors.blue,
-                Colors.black,
-              ],
-              tileMode: TileMode.mirror,
-            ),
+            color: const Color.fromRGBO(47, 62, 70, 1),
           ),
           child: textToDisplayOnMealItem,
         ),

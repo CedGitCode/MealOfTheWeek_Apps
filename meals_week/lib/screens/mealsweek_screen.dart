@@ -17,6 +17,7 @@ class _MealsWeekScreenState extends State<MealsWeekScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Repas de la semaine.'),
+        backgroundColor: Color.fromRGBO(132, 169, 140, 1),
       ),
       body: Container(
         margin: const EdgeInsets.all(10),
@@ -30,7 +31,7 @@ class _MealsWeekScreenState extends State<MealsWeekScreen> {
                     width: double.maxFinite,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Colors.orange,
+                      color: Color.fromRGBO(132, 169, 140, 1),
                     ),
                     child: Text(
                       widget.weeklyMeal[index].weekDay,

@@ -1,7 +1,6 @@
 import "package:flutter/material.dart";
 
 class MealChangeName extends StatefulWidget {
-
   final Function p_changeMeal;
 
   MealChangeName(this.p_changeMeal);
@@ -34,15 +33,25 @@ class _MealChangeNameState extends State<MealChangeName> {
       ),
       actions: <Widget>[
         TextButton(
-          child: const Text('Annuler'),
+          child: const Text(
+            'Annuler',
+            style: TextStyle(
+              color: Color.fromRGBO(47, 62, 70, 1),
+            ),
+          ),
           onPressed: () {
             Navigator.of(context).pop();
           },
         ),
         TextButton(
-          child: const Text('Confirmer'),
+          child: const Text(
+            'Confirmer',
+            style: TextStyle(
+              color: Color.fromRGBO(47, 62, 70, 1),
+            ),
+          ),
           onPressed: () {
-            if (_controller.text.isEmpty){
+            if (_controller.text.isEmpty) {
               return;
             }
             widget.p_changeMeal(_controller.text);
