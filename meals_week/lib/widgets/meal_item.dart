@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:meals_week/models/FileManager.dart';
+
 import '../models/mealWeek.dart';
+import "../widgets/AlertDialog_mealchangename.dart";
 
 class MealItem extends StatefulWidget {
-
   // List of weeklyMeal
   List<MealWeek> weeklyMeal;
 
@@ -23,7 +24,6 @@ class MealItem extends StatefulWidget {
 }
 
 class _MealItemState extends State<MealItem> {
-  late TextEditingController _controller;
   final FileManager _fileManager = FileManager(fileName: 'mealWeekJson.json');
 
   void changeMeal(String p_newRecipe) {
@@ -34,16 +34,34 @@ class _MealItemState extends State<MealItem> {
     });
   }
 
-  @override
-  void initState() {
-    super.initState();
-    _controller = TextEditingController();
+  void resetMealName() {
+    String nameMealClicked =
+        widget.weeklyMeal[widget.actualDay].meals[widget.whichPeriodOfDay];
+
+    if (nameMealClicked.startsWith('?', 0) && nameMealClicked.length == 1)
+      return;
+
+    setState(() {
+      widget.weeklyMeal[widget.actualDay]
+          .setDefaultMeal(widget.whichPeriodOfDay);
+      _fileManager.writeJson(widget.weeklyMeal);
+    });
   }
 
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
+  Widget get textToDisplayOnMealItem {
+    String mealItemName =
+        widget.weeklyMeal[widget.actualDay].meals[widget.whichPeriodOfDay];
+
+    if (mealItemName.startsWith('?', 0) && mealItemName.length == 1) {
+      return const Icon(
+        Icons.no_meals,
+        color: Colors.white,
+        size: 50.0,
+      );
+    } else {
+      return Text(
+          widget.weeklyMeal[widget.actualDay].meals[widget.whichPeriodOfDay]);
+    }
   }
 
   @override
@@ -51,15 +69,7 @@ class _MealItemState extends State<MealItem> {
     return Expanded(
       child: GestureDetector(
         onLongPress: () {
-
-          String nameMealClicked = widget.weeklyMeal[widget.actualDay].meals[widget.whichPeriodOfDay];
-
-          if (nameMealClicked.startsWith('?', 0) && nameMealClicked.length == 1) return;
-
-          setState(() {
-            widget.weeklyMeal[widget.actualDay].setDefaultMeal(widget.whichPeriodOfDay);
-            _fileManager.writeJson(widget.weeklyMeal);
-          });
+          resetMealName();
         },
         child: Container(
           alignment: Alignment.center,
@@ -76,29 +86,13 @@ class _MealItemState extends State<MealItem> {
               tileMode: TileMode.mirror,
             ),
           ),
-          child: Text(widget
-              .weeklyMeal[widget.actualDay].meals[widget.whichPeriodOfDay]),
+          child: textToDisplayOnMealItem,
         ),
         onTap: () {
           showDialog(
-              context: context,
-              builder: (ctx) {
-                return AlertDialog(
-                  title: const Text('Test'),
-                  content: TextField(
-                    controller: _controller,
-                  ),
-                  actions: <Widget>[
-                    TextButton(
-                      child: const Text('Confirmer.'),
-                      onPressed: () {
-                        changeMeal(_controller.text);
-                        Navigator.of(ctx).pop();
-                      },
-                    )
-                  ],
-                );
-              });
+            context: context,
+            builder: (ctx) => MealChangeName(changeMeal),
+          );
         },
       ),
     );

@@ -26,13 +26,13 @@ class FileManager {
   Future<String> _initializeFile() async {
     final file = await _localFile;
 
-    final String _initalizeData = "{\"Lundi\": {\"Midi\": \"Aucun\", \"Soir\":\"Aucun\"},"
-        "\"Mardi\": {\"Midi\": \"Aucun\", \"Soir\":\"Aucun\"},"
-        "\"Mercredi\": {\"Midi\": \"Aucun\", \"Soir\":\"Aucun\"},"
-        "\"Jeudi\": {\"Midi\": \"Aucun\", \"Soir\":\"Aucun\"},"
-        "\"Vendredi\": {\"Midi\": \"Aucun\", \"Soir\":\"Aucun\"},"
-        "\"Samedi\": {\"Midi\": \"Aucun\", \"Soir\":\"Aucun\"},"
-        "\"Dimanche\": {\"Midi\": \"Aucun\", \"Soir\":\"Aucun\"} }";
+    final String _initalizeData = "{\"Lundi\": {\"Midi\": \"?\", \"Soir\":\"?\"},"
+        "\"Mardi\": {\"Midi\": \"?\", \"Soir\":\"?\"},"
+        "\"Mercredi\": {\"Midi\": \"?\", \"Soir\":\"?\"},"
+        "\"Jeudi\": {\"Midi\": \"?\", \"Soir\":\"?\"},"
+        "\"Vendredi\": {\"Midi\": \"?\", \"Soir\":\"?\"},"
+        "\"Samedi\": {\"Midi\": \"?\", \"Soir\":\"?\"},"
+        "\"Dimanche\": {\"Midi\": \"?\", \"Soir\":\"?\"} }";
 
     file.writeAsString(_initalizeData);
 
