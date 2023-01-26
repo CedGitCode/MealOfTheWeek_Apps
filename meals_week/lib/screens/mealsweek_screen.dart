@@ -17,7 +17,6 @@ class _MealsWeekScreenState extends State<MealsWeekScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Repas de la semaine.'),
-        backgroundColor: Color.fromRGBO(132, 169, 140, 1),
       ),
       body: Container(
         margin: const EdgeInsets.all(10),
@@ -63,6 +62,17 @@ class _MealsWeekScreenState extends State<MealsWeekScreen> {
               ),
             );
           },
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.white,
+        child: Row(
+          children: [
+            IconButton(
+              onPressed: () => Navigator.of(context).pushNamed('/recipeideaScreen'),
+              icon: Icon(Icons.food_bank),
+            ),
+          ],
         ),
       ),
     );

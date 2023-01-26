@@ -1,14 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'dart:convert';
 
-import 'screens/mealsweek_screen.dart';
 import 'models/mealWeek.dart';
 import 'models/FileManager.dart';
+
+import 'screens/mealsweek_screen.dart';
+import 'screens/recipeidea_screen.dart';
+
+import 'providers/recipelist.dart';
 
 const String FILENAME = 'myJsonFile.json';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(providers: [
+      ChangeNotifierProvider(
+        create: (_) => RecipeList(),
+      ),
+    ], child: const MyApp()),
+  );
 }
 
 class MyApp extends StatefulWidget {
@@ -19,7 +30,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
   // Will take the meal of json File.
   List<MealWeek> _dataOfWeeklyMeal = [];
 
@@ -30,13 +40,12 @@ class _MyAppState extends State<MyApp> {
     // Me permet de lire/écrire dans le fichier
     final FileManager _fileManager = FileManager(fileName: 'mealWeekJson.json');
 
-    _fileManager.readJson().then( (value) {
-
+    _fileManager.readJson().then((value) {
       Map<String, dynamic> transformJsonIntoMap = jsonDecode(value);
       print(transformJsonIntoMap);
 
       transformJsonIntoMap.forEach((key, value) {
-        _dataOfWeeklyMeal.add( MealWeek(key, value) );
+        _dataOfWeeklyMeal.add(MealWeek(key, value));
       });
 
       setState(() {});
@@ -47,12 +56,25 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-          textTheme: const TextTheme(
-            bodyText2: TextStyle(
-                fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
-          )
+        textTheme: const TextTheme(
+          bodyText2: TextStyle(
+              fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
+        ),
+        appBarTheme: const AppBarTheme(
+          color: Color.fromRGBO(132, 169, 140, 1),
+        )
       ),
-      home: _dataOfWeeklyMeal.isEmpty ? const Scaffold(body: Center(child:Text('Coucou'),),) : MealsWeekScreen(weeklyMeal: _dataOfWeeklyMeal),
+      home: _dataOfWeeklyMeal.isEmpty
+          ? const Scaffold(
+              body: Center(
+                child: Text('Coucou'),
+              ),
+            )
+          : MealsWeekScreen(weeklyMeal: _dataOfWeeklyMeal),
+      initialRoute: '/',
+      routes: {
+        '/recipeideaScreen': (context) => const RecipeIdeaScreen(),
+      },
     );
   }
 }
