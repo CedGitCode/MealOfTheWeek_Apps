@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:meals_week/models/recipe.dart';
+import 'package:provider/provider.dart';
+
+import '../models/FileManager.dart';
+import '../providers/recipelist.dart';
 
 class RecipeItem extends StatelessWidget {
   final String title;
@@ -10,13 +13,26 @@ class RecipeItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: ListTile(
-        leading: Text(
-          title,
-          style: TextStyle(color: Colors.black),
+    return Dismissible(
+      background: Container(
+        color: Colors.red,
+      ),
+      onDismissed: (_) {
+        Provider.of<RecipeList>(context, listen: false).removeRecipeIdea(title);
+
+        FileManager recipeIdeaFile = FileManager(fileName: 'recipeIdea.json');
+        recipeIdeaFile.writeJson(Provider.of<RecipeList>(context, listen: false).toJson());
+      },
+      key: UniqueKey(),
+      direction: DismissDirection.endToStart,
+      child: Card(
+        child: ListTile(
+          leading: Text(
+            title,
+            style: TextStyle(color: Colors.black),
+          ),
+          trailing: Text("Ah oui"),
         ),
-        trailing: Text("Ah oui"),
       ),
     );
   }

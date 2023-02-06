@@ -13,6 +13,11 @@ class RecipeList with ChangeNotifier {
     notifyListeners();
   }
 
+  void removeRecipeIdea(String p_recipeTitle) {
+    _recipeList.removeWhere((element) => element.title == p_recipeTitle);
+
+    notifyListeners();
+  }
   void InitializeRecipeList() {
 
     final _FileManagerRecipeIdea = FileManager(fileName: 'recipeIdea.json');
