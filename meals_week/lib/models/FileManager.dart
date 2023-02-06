@@ -25,17 +25,23 @@ class FileManager {
 
   Future<String> _initializeFile() async {
     final file = await _localFile;
+    late String _initalizeData;
 
-    final String _initalizeData = "{\"Lundi\": {\"Midi\": \"?\", \"Soir\":\"?\"},"
+    if (fileName == 'mealWeekJson.json') {
+
+     _initalizeData = "{\"Lundi\": {\"Midi\": \"?\", \"Soir\":\"?\"},"
         "\"Mardi\": {\"Midi\": \"?\", \"Soir\":\"?\"},"
         "\"Mercredi\": {\"Midi\": \"?\", \"Soir\":\"?\"},"
         "\"Jeudi\": {\"Midi\": \"?\", \"Soir\":\"?\"},"
         "\"Vendredi\": {\"Midi\": \"?\", \"Soir\":\"?\"},"
         "\"Samedi\": {\"Midi\": \"?\", \"Soir\":\"?\"},"
         "\"Dimanche\": {\"Midi\": \"?\", \"Soir\":\"?\"} }";
+    }
+    else {
+      _initalizeData = '{}';
+    }
 
     file.writeAsString(_initalizeData);
-
     return _initalizeData;
   }
 
@@ -53,16 +59,10 @@ class FileManager {
 
   }
 
-  Future<void> writeJson(List<MealWeek> p_weeklyMeal) async {
+  Future<void> writeJson(Map<String, dynamic> stringElements) async {
     final file = await _localFile;
 
-    Map<String, dynamic> jsonIntoMap = {};
-
-    p_weeklyMeal.forEach((element) {
-      jsonIntoMap.addAll(element.toJson());
-    });
-
-    final String jsonResult = jsonEncode(jsonIntoMap);
+    final String jsonResult = jsonEncode(stringElements);
 
     file.writeAsString(jsonResult);
   }

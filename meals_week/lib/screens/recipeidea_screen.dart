@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../widgets/recipeitem.dart';
 import '../providers/recipelist.dart';
+import '../widgets/AlertDialog_addrecipeIdea.dart';
 
 class RecipeIdeaScreen extends StatefulWidget {
   const RecipeIdeaScreen({Key? key}) : super(key: key);
@@ -15,9 +16,9 @@ class _RecipeIdeaScreenState extends State<RecipeIdeaScreen> {
 
   @override
   Widget build(BuildContext context) {
-    print("Je suis crée ! ");
     final recipeList = Provider.of<RecipeList>(context).getRecipeList();
-
+    print("Ma liste");
+    print(recipeList);
     return Scaffold(
       appBar: AppBar(
         title: const Text('Idées Recettes'),
@@ -42,7 +43,18 @@ class _RecipeIdeaScreenState extends State<RecipeIdeaScreen> {
             ),
           ],
         ),
-      )
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          showDialog(
+            context: context,
+            builder: (ctx) => const AddRecipeIdea(),
+          );
+        },
+        backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
+        child: const Icon(Icons.add),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }

@@ -30,7 +30,14 @@ class _MealItemState extends State<MealItem> {
     setState(() {
       widget.weeklyMeal[widget.actualDay].meals[widget.whichPeriodOfDay] =
           p_newRecipe;
-      _fileManager.writeJson(widget.weeklyMeal);
+
+      Map<String, dynamic> jsonIntoMap = {};
+
+      widget.weeklyMeal.forEach((element) {
+        jsonIntoMap.putIfAbsent(element.weekDay, () => element.meals);
+      });
+
+      _fileManager.writeJson(jsonIntoMap);
     });
   }
 
@@ -44,7 +51,14 @@ class _MealItemState extends State<MealItem> {
     setState(() {
       widget.weeklyMeal[widget.actualDay]
           .setDefaultMeal(widget.whichPeriodOfDay);
-      _fileManager.writeJson(widget.weeklyMeal);
+
+      Map<String, dynamic> jsonIntoMap = {};
+
+      widget.weeklyMeal.forEach((element) {
+        jsonIntoMap.putIfAbsent(element.weekDay, () => element.meals);
+      });
+
+      _fileManager.writeJson(jsonIntoMap);
     });
   }
 

@@ -12,7 +12,10 @@ class RecipeItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-        leading: Text(title, style: TextStyle(color: Colors.black),),
+        leading: Text(
+          title,
+          style: TextStyle(color: Colors.black),
+        ),
         trailing: Text("Ah oui"),
       ),
     );

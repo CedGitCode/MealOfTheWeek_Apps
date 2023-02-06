@@ -14,6 +14,13 @@ class Recipe {
     return _title;
   }
 
+  Map<String, dynamic> toJson() {
+    return {
+      'title':_title,
+      'grade':_grade,
+    };
+  }
+
   int get grade {
     return _grade;
   }
