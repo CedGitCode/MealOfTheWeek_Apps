@@ -18,8 +18,12 @@ class RecipeList with ChangeNotifier {
 
     notifyListeners();
   }
-  void InitializeRecipeList() {
 
+  bool alreadyContains(String p_recipeTitle) {
+    return _recipeList.any((element) => element.title == p_recipeTitle);
+  }
+
+  void InitializeRecipeList() {
     final _FileManagerRecipeIdea = FileManager(fileName: 'recipeIdea.json');
 
     _FileManagerRecipeIdea.readJson().then((value) {

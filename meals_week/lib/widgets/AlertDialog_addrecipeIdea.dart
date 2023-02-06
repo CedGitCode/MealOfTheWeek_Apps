@@ -53,6 +53,8 @@ class _AddRecipeIdeaState extends State<AddRecipeIdea> {
         ),
         TextButton(
           onPressed: () {
+            if (recipeList.alreadyContains(_titleRecipe.text) == true) return;
+            
             recipeList.addingRecipeIdea(
               Recipe(p_title: _titleRecipe.text, p_grade: 2),
             );
