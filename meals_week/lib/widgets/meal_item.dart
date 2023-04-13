@@ -82,9 +82,6 @@ class _MealItemState extends State<MealItem> {
   Widget build(BuildContext context) {
     return Expanded(
       child: GestureDetector(
-        onLongPress: () {
-          resetMealName();
-        },
         child: Container(
           alignment: Alignment.center,
           height: 150,
@@ -94,6 +91,9 @@ class _MealItemState extends State<MealItem> {
           ),
           child: textToDisplayOnMealItem,
         ),
+        onLongPress: () {
+          resetMealName();
+        },
         onTap: () {
           showDialog(
             context: context,

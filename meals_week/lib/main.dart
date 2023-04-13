@@ -7,6 +7,7 @@ import 'models/FileManager.dart';
 
 import 'screens/mealsweek_screen.dart';
 import 'screens/recipeidea_screen.dart';
+import 'screens/marketlist_screen.dart';
 
 import 'providers/recipelist.dart';
 
@@ -34,7 +35,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   // Will take the meal of json File.
   List<MealWeek> _dataOfWeeklyMeal = [];
-  final RecipeList _savedRecipeIdea = RecipeList();
 
   @override
   void initState() {
@@ -49,15 +49,17 @@ class _MyAppState extends State<MyApp> {
       transformJsonIntoMap.forEach((key, value) {
         _dataOfWeeklyMeal.add(MealWeek(key, value));
       });
+
       setState(() {});
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    context.read<RecipeList>().InitializeRecipeList();
-    
+    Provider.of<RecipeList>(context, listen: false);
+
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         textTheme: const TextTheme(
           bodyText2: TextStyle(
@@ -77,6 +79,7 @@ class _MyAppState extends State<MyApp> {
       initialRoute: '/',
       routes: {
         '/recipeideaScreen': (context) => const RecipeIdeaScreen(),
+        '/marketListScreen': (context) => MarketListScreen(),
       },
     );
   }

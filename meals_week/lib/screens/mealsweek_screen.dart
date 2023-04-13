@@ -12,8 +12,13 @@ class MealsWeekScreen extends StatefulWidget {
 }
 
 class _MealsWeekScreenState extends State<MealsWeekScreen> {
+  int _selectedIndex = 1;
+
   @override
   Widget build(BuildContext context) {
+    if (_selectedIndex != 1) {
+      _selectedIndex = 1;
+    }
     return Scaffold(
       appBar: AppBar(
         title: const Text('Repas de la semaine.'),
@@ -30,7 +35,7 @@ class _MealsWeekScreenState extends State<MealsWeekScreen> {
                     width: double.maxFinite,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Color.fromRGBO(132, 169, 140, 1),
+                      color: const Color.fromRGBO(132, 169, 140, 1),
                     ),
                     child: Text(
                       widget.weeklyMeal[index].weekDay,
@@ -64,16 +69,25 @@ class _MealsWeekScreenState extends State<MealsWeekScreen> {
           },
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
-        color: Colors.white,
-        child: Row(
-          children: [
-            IconButton(
-              onPressed: () => Navigator.of(context).pushNamed('/recipeideaScreen'),
-              icon: Icon(Icons.food_bank),
-            ),
-          ],
-        ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Recettes'),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.storefront), label: 'Courses'),
+        ],
+        currentIndex: _selectedIndex,
+        selectedItemColor: const Color.fromRGBO(132, 169, 140, 1),
+        onTap: (index) {
+          setState(() {
+            _selectedIndex = index;
+          });
+          if (index == 0) {
+            Navigator.of(context).pushNamed('/recipeideaScreen');
+          }
+          else if (index == 2) {
+            Navigator.of(context).pushNamed('/marketListScreen');
+          }
+        },
       ),
     );
   }

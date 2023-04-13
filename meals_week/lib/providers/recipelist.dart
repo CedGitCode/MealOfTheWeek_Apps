@@ -6,8 +6,11 @@ import '../models/recipe.dart';
 import '../models/FileManager.dart';
 
 class RecipeList with ChangeNotifier {
-  List<Recipe> _recipeList = [];
+  final List<Recipe> _recipeList = [];
 
+  RecipeList() {
+    InitializeRecipeList();
+  }
   void addingRecipeIdea(Recipe p_newRecipe) {
     _recipeList.add(p_newRecipe);
     notifyListeners();
@@ -23,17 +26,17 @@ class RecipeList with ChangeNotifier {
     return _recipeList.any((element) => element.title == p_recipeTitle);
   }
 
-  void InitializeRecipeList() {
+  Future< List<Recipe> > InitializeRecipeList() async {
     final _FileManagerRecipeIdea = FileManager(fileName: 'recipeIdea.json');
 
-    _FileManagerRecipeIdea.readJson().then((value) {
+    return _FileManagerRecipeIdea.readJson().then((value) {
       Map<String, dynamic> transformJsonIntoMap = jsonDecode(value);
 
       transformJsonIntoMap.forEach((key, value) {
         _recipeList.add(Recipe(p_title: key, p_grade: value));
       });
 
-      notifyListeners();
+      return getRecipeList();
     });
   }
 
@@ -47,7 +50,7 @@ class RecipeList with ChangeNotifier {
   Map<String, dynamic> toJson() {
     Map<String, dynamic> stringOfRecipeList = {};
 
-    _recipeList.forEach((element) {
+    _recipeList.forEach( (element) {
       stringOfRecipeList.putIfAbsent(element.title, () => element.grade);
     });
 
@@ -55,6 +58,6 @@ class RecipeList with ChangeNotifier {
   }
 
   List<Recipe> getRecipeList() {
-    return [..._recipeList];
+    return _recipeList;
   }
 }

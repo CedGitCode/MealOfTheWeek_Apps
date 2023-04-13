@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../widgets/recipeitem.dart';
+import '../models/recipe.dart';
 import '../providers/recipelist.dart';
 import '../widgets/AlertDialog_addrecipeIdea.dart';
 
@@ -16,12 +17,12 @@ class _RecipeIdeaScreenState extends State<RecipeIdeaScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final recipeList = Provider.of<RecipeList>(context).getRecipeList();
-    print("Ma liste");
-    print(recipeList);
+  final RecipeList _recipeList = Provider.of<RecipeList>(context);
+  final List<Recipe> recipes = _recipeList.getRecipeList();
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Idées Recettes'),
+        title: const Text('Idées'),
       ),
       body: Container(
         margin: const EdgeInsets.all(10),
@@ -32,12 +33,13 @@ class _RecipeIdeaScreenState extends State<RecipeIdeaScreen> {
               height: 50,
             ),
             const SizedBox(height: 10),
+
             Expanded(
               child: ListView.builder(
                   shrinkWrap: true,
-                  itemCount: recipeList.length,
+                  itemCount: recipes.length,
                   itemBuilder: (_, index) {
-                    return RecipeItem(title:recipeList[index].title, grade: recipeList[index].grade);
+                    return RecipeItem(id: index, title:recipes[index].title, grade: recipes[index].grade);
                   }
               ),
             ),
